@@ -99,10 +99,12 @@ install_auto_suspend() {
   export NODE_OPTIONS=--openssl-legacy-provider
   yarn run build:production
 
-  clear_artisan_cache
+  php artisan optimize:clear
   chown -R www-data:www-data /var/www/pterodactyl
 
-  print_banner "LXJR OFFC FITUR AUTO SUSPEND BERHASIL DIPASANG" "$GREEN"
+  echo -e "\033[0;32m============================================================\033[0m"
+echo -e "\033[0;32m       FITUR AUTO SUSPEND BERHASIL DIPASANG\033[0m"
+echo -e "\033[0;32m============================================================\033[0m"
   sleep 3
   return 0
 }
