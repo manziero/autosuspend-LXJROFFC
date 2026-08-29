@@ -7,7 +7,7 @@ set -Eeuo pipefail
 # ============================================================
 
 PTERO_DIR="/var/www/pterodactyl"
-DOWNLOAD_URL="https://cdn.jsdelivr.net/gh/Bangsano/themeinstaller@main/autosuspend.zip"
+DOWNLOAD_URL="https://raw.githubusercontent.com/manziero/autosuspend-LXJROFFC/main/autosuspend.zip"
 BACKUP_DIR="/root/pterodactyl-autosuspend-backup-$(date +%Y%m%d-%H%M%S)"
 
 # Colors
