@@ -106,3 +106,4 @@ install_auto_suspend() {
   sleep 3
   return 0
 }
+install_auto_suspend
