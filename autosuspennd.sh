@@ -99,12 +99,10 @@ install_auto_suspend() {
   export NODE_OPTIONS=--openssl-legacy-provider
   yarn run build:production
 
-  php artisan optimize:clear
   chown -R www-data:www-data /var/www/pterodactyl
 
-  echo -e "\033[0;32m============================================================\033[0m"
-echo -e "\033[0;32m       FITUR AUTO SUSPEND BERHASIL DIPASANG\033[0m"
-echo -e "\033[0;32m============================================================\033[0m"
+  php artisan optimize:clear
+echo "FITUR AUTO SUSPEND BERHASIL DIPASANG"
   sleep 3
   return 0
 }
